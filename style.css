@@ -1,0 +1,334 @@
+:root {
+  --xl: 12rem;
+  --lg: 3.3rem;
+  --md: 1.5rem;
+  --sm: 1rem;
+  --tagline: 2.7rem;
+  --h4: 3rem;
+  --blacks: #0c0c0c;
+  --whites: #efefef;
+}
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(/assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(/assets/fonts/Lato-Regular.ttf);
+}
+.container {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+a {
+  text-decoration: none;
+}
+.bar {
+  background-color: var(--blacks);
+  position: absolute;
+  width: 100%;
+}
+.content {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.3fr;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+.logo h1 {
+  color: var(--whites);
+  font-family: "Lato-Bold";
+  font-size: var(--sm);
+}
+.link a {
+  font-family: "Lato-Regular";
+  color: var(--whites);
+  font-size: var(--sm);
+  padding: 1rem;
+}
+.button{
+    display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.button a {
+  color: var(--blacks);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+}
+.a {
+  background-color: var(--whites);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+}
+.is--hero {
+  background-color: var(--blacks);
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.hero-text h4 {
+  font-family: "Lato-Regular";
+  font-size: var(--h4);
+  color: var(--whites);
+  font-weight: 400;
+  width: 55rem;
+}
+.hero-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.image {
+  background-image: url(/assets/photos/449191371_18156839026309441_6938923587020689009_n.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  border-radius: 1rem;
+}
+.second {
+  width: 100%;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.text-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-top h5 {
+  color: var(--blacks);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+  font-weight: 400;
+}
+.text-top p {
+  color: var(--blacks);
+  font-family: "Lato-Regular";
+  font-size: var(--md);
+}
+.text-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-bottom p {
+  color: var(--blacks);
+  font-family: "Lato-Regular";
+  font-size: var(--md);
+  padding-top: 2rem;
+  width: 40rem;
+}
+.text-bottom a {
+  color: var(--whites);
+  padding-top: 3rem;
+  font-family: "Lato-Regular";
+}
+.b {
+  background-color: var(--blacks);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+}
+.wraper{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.text-top2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.text-top2 h5 {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+  font-size: 2rem;
+  font-weight: 400;
+}
+.text-top2 p {
+    color: var(--whites);
+    font-family: "Lato-Regular";
+    font-size: var(--sm);
+    font-style: italic;
+}
+.text-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 6rem;
+  padding-left: 3rem;
+}
+.img {
+  background-image: url(/assets/photos/458516105_18164585323309441_6313216316032413196_n.jpg);
+  width: 30rem;
+  height: 45rem;
+  background-size: cover;
+  background-position: center;
+  padding-left: 2rem;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text p{
+    color: var(--whites);
+    font-family: "Lato-Regular";
+    font-size: var(--md);
+    padding-top: 2rem;
+    width: 40rem
+}
+.marquee h1 {
+  font-family: "Lato-Bold";
+  font-size: 2rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:3rem ;
+}
+.wrapper p {
+  font-family: "Lato-Regular";
+  font-size: var(--md);
+  width: 40rem;
+}
+.fourth {
+  padding-bottom: 4rem;
+}
+.wrapper a {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+}
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imag {
+  background-image: url(/assets/photos/LOGO\ main\ 1.png);
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+}
+.is--footbar {
+  background-color: var(--blacks);
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.foo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.useful {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.head {
+  color: var(--whites);
+  font-family: "Lato-Bold";
+  font-size: var(--md);
+}
+.useful a {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+  padding-top: 0.5rem;
+}
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.connect a {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+  padding-top: 0.5rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact h4 {
+  color: var(--whites);
+  font-family: "Lato-Bold";
+  font-size: var(--md);
+}
+.contact p {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+  padding-top: 1rem;
+}
+.contact a {
+  color: var(--whites);
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.bottom p {
+  font-family: "Lato-Regular";
+  font-size: var(--sm);
+  color: var(--whites);
+}
+.marquee {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: var(--md);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.marquee-content{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: var(--md);
+  animation: marquee 120s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
