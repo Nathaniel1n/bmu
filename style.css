@@ -36,7 +36,7 @@ a {
 }
 .content {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.3fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: center;
   padding-top: 1.5rem;
 }
@@ -44,6 +44,10 @@ a {
   color: var(--whites);
   font-family: "Lato-Bold";
   font-size: var(--sm);
+}
+.link{
+  display: flex;
+  justify-content: center;
 }
 .link a {
   font-family: "Lato-Regular";
