@@ -50,6 +50,10 @@ a {
   color: var(--whites);
   font-size: var(--sm);
   padding: 1rem;
+  transition: .3s;
+}
+.link a:hover{
+  color:rgb(59, 56, 56) ;
 }
 .button{
     display: flex;
@@ -60,6 +64,10 @@ a {
   color: var(--blacks);
   font-family: "Lato-Regular";
   font-size: var(--sm);
+  transition: 0.20s;
+}
+.a:hover{
+  background-color: rgb(197, 204, 204);
 }
 .a {
   background-color: var(--whites);
@@ -151,6 +159,10 @@ a {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.5rem;
+  transition: .3s;
+}
+.b:hover{
+  background-color: rgb(59, 56, 56);
 }
 .wraper{
     padding-top: 3rem;
@@ -210,6 +222,9 @@ a {
   justify-content: center;
   text-align: center;
   gap:3rem ;
+}
+.wrapper a{
+  transition: .3s;
 }
 .wrapper p {
   font-family: "Lato-Regular";
