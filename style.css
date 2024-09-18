@@ -36,7 +36,7 @@ a {
 }
 .content {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 0.3fr;
   align-items: center;
   padding-top: 1.5rem;
 }
@@ -44,10 +44,6 @@ a {
   color: var(--whites);
   font-family: "Lato-Bold";
   font-size: var(--sm);
-}
-.link{
-  display: flex;
-  justify-content: center;
 }
 .link a {
   font-family: "Lato-Regular";
@@ -225,6 +221,30 @@ a {
 .fourth {
   padding-bottom: 4rem;
 }
+.marquee {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: var(--md);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.marquee-content{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: var(--md);
+  animation: marquee 120s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
 .wrapper a {
   color: var(--whites);
   font-family: "Lato-Regular";
@@ -246,93 +266,59 @@ a {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.foo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.pic{
+  background-image: url(/assets/photos/LOGO\ main\ 1.png);
+  width: 10rem;
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
 }
-.useful {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.head {
-  color: var(--whites);
-  font-family: "Lato-Bold";
-  font-size: var(--md);
-}
-.useful a {
-  color: var(--whites);
-  font-family: "Lato-Regular";
-  font-size: var(--sm);
-  padding-top: 0.5rem;
-}
-.connect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.connect a {
-  color: var(--whites);
-  font-family: "Lato-Regular";
-  font-size: var(--sm);
-  padding-top: 0.5rem;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.contact h4 {
-  color: var(--whites);
-  font-family: "Lato-Bold";
-  font-size: var(--md);
-}
-.contact p {
-  color: var(--whites);
-  font-family: "Lato-Regular";
-  font-size: var(--sm);
-  padding-top: 1rem;
-}
-.contact a {
-  color: var(--whites);
-  font-family: "Lato-Regular";
-  font-size: var(--sm);
-}
-.bottom {
+.contents{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
 }
-.bottom p {
-  font-family: "Lato-Regular";
-  font-size: var(--sm);
+.wrapper3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sm);
+}
+.wrapper3 p{
   color: var(--whites);
+    font-family: "Lato-Regular";
+    font-size:var(--sm);
+    text-align: center;
 }
-.marquee {
+.foo-a a{
+  color: var(--whites);
+    font-family: "Lato-Regular";
+    font-size: var(--sm);
+    padding: 1rem;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bottom{
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  gap: var(--md);
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  justify-content: space-between;
+  padding: 2rem 2rem 0rem 2rem;
 }
-.marquee-content{
+.bottom p{
+  color: var(--whites);
+    font-family: "Lato-Regular";
+    font-size: var(--sm);
+}
+hr{
+  width: 100%;
+}
+.hori{
   display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-  gap: var(--md);
-  animation: marquee 120s linear infinite;
-}
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 1rem));
-  }
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--sm);
 }
