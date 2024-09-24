@@ -26,11 +26,17 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.first{
+ background-image:url(/assets/photos/Frame\ 2.png);
+ background-color: var(--blacks);
+ background-size: cover;
+ background-position: center;
+ filter: brightness(-2);
+}
 a {
   text-decoration: none;
 }
 .bar {
-  background-color: var(--blacks);
   position: absolute;
   width: 100%;
 }
@@ -78,7 +84,6 @@ a {
   border-radius: 0.5rem;
 }
 .is--hero {
-  background-color: var(--blacks);
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -97,16 +102,33 @@ a {
   padding-top: 10rem;
 }
 .image {
-  background-image: url(/assets/photos/449191371_18156839026309441_6938923587020689009_n.jpg);
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  margin-top: 6rem;
-  margin-bottom: 8rem;
-  border-radius: 1rem;
+  overflow: hidden;
+  padding-top: var(--lg);
+  white-space: nowrap;
+}
+.image-slide{
+  display: inline-block;
+  animation: 50s slide ease-in-out infinite; 
+}
+.image:hover .image-slide{
+  animation-play-state: paused;
+}
+.image-slide img{
+  height: 40rem;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 .second {
   width: 100%;
+  background-image: url(/assets/photos/Frame\ 3.png);
+  background-position: center;
+  background-size: cover;
 }
 .wrap {
   display: flex;
@@ -168,6 +190,13 @@ a {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+.third{
+  background-color: var(--blacks);
+  background-image: url(/assets/photos/Frame\ 3.png);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
 .text-top2 {
   display: flex;
   flex-direction: column;
@@ -193,11 +222,26 @@ a {
   padding-top: 6rem;
 }
 .img {
-  background-image: url(/assets/photos/458516105_18164585323309441_6313216316032413196_n.jpg);
-  height: 45rem;
-  background-size: cover;
-  background-position: center;
-  padding-left: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.img-slide img{
+  height: 40rem;
+}
+.img-slide{
+  display: inline-block;
+  animation: 40s slide linear infinite;
+}
+.img:hover .img-slide{
+  animation-play-state: paused;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 .text {
   display: flex;
@@ -209,7 +253,7 @@ a {
     font-family: "Lato-Regular";
     font-size: var(--md);
     padding-top: 2rem;
-    width: 40rem
+    width: 40rem;
 }
 .marquee h1 {
   font-family: "Lato-Bold";
@@ -262,80 +306,85 @@ a {
   color: var(--whites);
   font-family: "Lato-Regular";
 }
-.contents {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.imag {
-  background-image: url(/assets/photos/LOGO\ main\ 1.png);
-  width: 10rem;
-  height: 10rem;
-  background-size: cover;
-  background-position: center;
-}
 .is--footbar {
   background-color: var(--blacks);
   width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  
 }
-.pic{
-  background-image: url(/assets/photos/LOGO\ main\ 1.png);
-  width: 10rem;
-  height: 10rem;
-  background-size: cover;
-  background-position: center;
-}
-.contents{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wrapper3{
+.wrapp{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-}
-.wrapper3 p{
-  color: var(--whites);
-    font-family: "Lato-Regular";
-    font-size:var(--sm);
-    text-align: center;
-}
-.foo-a {
-  padding-top: 1.5rem;
-}
-.foo-a a{
-  color: var(--whites);
-    font-family: "Lato-Regular";
-    font-size: var(--sm); 
-    padding: 0.5rem;
 }
 .top{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  width: 100%;
+  height: 40%;
+}
+.pic{
+  background-image: url(/assets/photos/Frame\ 2.png);
+  background-size: cover;
+}
+.f-logo{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.2rem;
+  align-items: center;
+  text-align: center;
+}
+.f-logo img{
+  width: 10rem;
+}
+.f-logo p{
+  color: var(--whites);
+  font-size: var(--sm);
+  font-family: "Lato-Bold";
+  font-weight: 400;
+  width: 7rem;
+}
+.useful{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:0.5rem;
+ padding-top: var(--sm);
+ padding-bottom: var(--md);
+ height: auto;
+}
+.down{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.useful h4{
+  color: var(--whites);
+  font-family: "Lato-Bold";
+  font-size: var(--md);
+  font-weight: 400;
+  padding-bottom: var(--md);
+}
+.useful a{
+  color: var(--whites);
+  font-size: var(--sm);
+  font-family:"Lato-Regular" ;
+}
+.useful p{
+  color: var(--whites);
+  font-size: var(--sm);
+  font-family: "Lato-Regular";
+}
+.hor{
+  padding:0rem 4rem;
+}
+.bottom p{
+  color: var(--whites);
+  font-family: "Lato-Bold";
+  font-size: var(--sm);
+  font-weight: 400;
 }
 .bottom{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 2rem 0rem 2rem;
-}
-.bottom p{
-  color: var(--whites);
-    font-family: "Lato-Regular";
-    font-size: var(--sm);
-}
-hr{
-  width: 100%;
-}
-.hori{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: var(--sm);
+  padding:1rem 4rem;
 }
